@@ -19,4 +19,12 @@ class Post extends Model
     {
         return $this->hasMany(Comment::class);
     }
+
+    
+
+    // Define the relationship with the Vote model
+    public function votes()
+    {
+        return $this->hasMany(Vote::class);
+    }
 }

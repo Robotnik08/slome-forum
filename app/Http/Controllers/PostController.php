@@ -39,7 +39,7 @@ class PostController extends Controller
             'title' => $validatedData['title'],
             'content' => $validatedData['content'],
             'name' => auth()->user()->name,
-            // 'user_id' => auth()->user()->id, // assuming you have set up the relationship correctly
+            'user_id' => auth()->user()->id,
         ]);
 
         // Redirect to the index page or to the newly created post

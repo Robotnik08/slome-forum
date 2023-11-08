@@ -20,7 +20,7 @@ return new class extends Migration
             $table->text('content');
 
             // user_id
-            // $table->foreignId('user_id')->constrained()->onDelete('cascade');
+            $table->foreignId('user_id')->constrained()->onDelete('cascade');
             // name (user)
             $table->string('name');
         });
